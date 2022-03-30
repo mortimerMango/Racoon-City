@@ -32,10 +32,10 @@ body{ margin: auto;}
 	margin: 0 auto;
 	border-width: 0px 0px 3px 0px;
 	border-style: solid;
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+	/** use full local computer path to display header image /home/img/header.jpg **/
+	background-image: url("file:///C:/put path here for /home/img/header.jpg");
 	background-position-y: 50%;
 	background-position-x: 49%;
-	/*background: url(http://lp-sf.com/images/header_Bkgd.jpg) 0 0 no-repeat;*/
 	position: relative;
 	
 }
@@ -145,7 +145,8 @@ li a{
 }
 
 input[type="button"]{
-	background-image: url('file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/shopping_cart/img/close-option.png');
+	/** use full local computer path to render close option image on cart drop down shopping_cart/img/close-option.png **/
+	background-image: url('file:///C:/ put path here for /shopping_cart/img/close-option.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 30px;
@@ -206,23 +207,23 @@ input[name="pesc"]{
 	padding: 0px;
 	background-color: rgba(0, 0, 0, 0.8);
 }
-
+/** use full local computer path to render images for insect, frog, and hermit crab on selection **/
 #veg-con{
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/leaf-insect.png");
+	background-image: url("file:///C:/put path here for /Ralphs/images/leaf-insect.png");
 	background-size: 426px;
 	background-repeat: no-repeat;
 	background-position-x: 115px;
 	background-position-y: -52px;
 }
 #carn-con{
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/frog.png");
+	background-image: url("file:///C:/put path here for /Ralphs/images/frog.png");
 	background-size: 362px;
 	background-repeat: no-repeat;
 	background-position-x: 116px;
 	background-position-y: -19px;
 }
 #pesc-con{
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/hermit-crab.png");
+	background-image: url("file:///C:/put path here for /Ralphs/images/hermit-crab.png");
 	background-size: 372px;
 	background-repeat: no-repeat;
 	background-position-x: 100px;
@@ -290,7 +291,7 @@ h3{width: 300px; font-size: 40px;}
 	opacity: 0;
 	transition: all 0.5s
 }
-/*****Lets do something with a on click listener JS*****/
+
 .button:active:after {
 	padding: 0;
 	margin: 0;
@@ -311,7 +312,8 @@ h3{width: 300px; font-size: 40px;}
 	border-width: 3px 0px 3px 0px;
 	border-style: solid;
 	border-color: black;
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+	/** use full local computer path to render footer banner image **/
+	background-image: url("file:///C:/put path here for /home/img/header.jpg");
 }
 
 #footer-lip{
