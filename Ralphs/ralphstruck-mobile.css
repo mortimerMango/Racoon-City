@@ -17,8 +17,7 @@ html{ width: 100%; height: 100%;}
 body{ margin: auto;}
 
 @media only screen and (max-width: 600px) {
-	/**THIS IS THE SAME FOR ALL PAGES, LETS PUT IT IN IT's OWN PAGE**/
-	
+
 	/**HEADER**/
 	#header{
 		margin: 0 auto;
@@ -35,11 +34,10 @@ body{ margin: auto;}
 		margin: 0 auto;
 		border-width: 0px 0px 3px 0px;
 		border-style: solid;
-		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+		background-image: url("file:///C:/your local computer path here for /home/img/header.jpg");
 		background-position-y: 50%;
 		background-position-x: 47%;
 		background-size: 1000px;
-		/*background: url(http://lp-sf.com/images/header_Bkgd.jpg) 0 0 no-repeat;*/
 		position: relative;
 	}
 	#logo{
@@ -115,7 +113,7 @@ body{ margin: auto;}
 		position: unset;
 	}
 	input[type="button"]{
-		background-image: url('file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/shopping_cart/img/close-option.png');
+		background-image: url('file:///C:/Your local computer path for /shopping_cart/img/close-option.png');
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 30px;
@@ -134,18 +132,6 @@ body{ margin: auto;}
 		background-color: #FC6E2E;
 		border-color: #B4400A;
 	}
-	/**
-	input[name="insc"]{
-		background-image: url('file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/shopping_cart/img/close-option.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		width: 35px;
-		height: 100%;
-		background-position: center;
-		background-color: #DD215C;
-		border-color: #99123C;
-	}
-	**/
 
 	li a{
 		margin: 0px auto;
@@ -206,21 +192,21 @@ body{ margin: auto;}
 		background-color: rgba(0, 0, 0, 0.8);
 	}
 	#veg-con{
-		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/leaf-insect.png");
+		background-image: url("file:///C:/Your local computer path here for /Ralphs/images/leaf-insect.png");
 		background-size: 79%;
 		background-repeat: no-repeat;
 		background-position-x: 85%;
 		background-position-y: 0%;
 	}
 	#carn-con{
-		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/frog.png");
+		background-image: url("file:///C:/Your local computer path here for  /Ralphs/images/frog.png");
 		background-size: 73%;
 		background-repeat: no-repeat;
 		background-position-x: 85%;
 		background-position-y: 0%;
 	}
 	#pesc-con{
-		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/hermit-crab.png");
+		background-image: url("file:///C:/Your local computer path here for /Ralphs/images/hermit-crab.png");
 		background-size: 71%;
 		background-repeat: no-repeat;
 		background-position-x: 90%;
@@ -245,7 +231,7 @@ body{ margin: auto;}
 	#veg-title{ color: coral; background-color: #DD215C;}
 	#carn-title{ color: lightcyan; background-color: #38BEFF;}
 	#pesc-title{ color: wheat; background-color: #FC6E2E;}
-	/**change -dis to -des**/
+
 	#veg-con-dis, #carn-con-dis, #pesc-con-dis{
 		width: 30%;
 		
@@ -291,7 +277,7 @@ body{ margin: auto;}
 		opacity: 0;
 		transition: all 0.5s
 	}
-	/*****Lets do something with a on click listener JS*****/
+
 	.button:active:after {
 		padding: 0;
 		margin: 0;
@@ -324,7 +310,7 @@ body{ margin: auto;}
 		border-width: 3px 0px 3px 0px;
 		border-style: solid;
 		border-color: black;
-		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+		background-image: url("file:///C:/Your local computer path here for  /home/img/header.jpg");
 		background-size: 1000px;
 	}
 
