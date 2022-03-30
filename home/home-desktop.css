@@ -39,7 +39,8 @@ body{
 	border-width: 0px 0px 3px 0px;
 	border-style: solid;
 	border-color: black;
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+	/** Use full path from your computer for home/img/header.jpg to render background image **/
+	background-image: url("file:///C:/put path here");
 	background-position-y: 50%;
 	background-position-x: 49%;
 	position: relative;
@@ -116,8 +117,6 @@ input[type="submit"]{
 	background-color: red;
 }
 
-
-
 /**END FORM STUFF**/
 
 
@@ -161,15 +160,6 @@ input[type="submit"]{
 }
 
 #feature{
-	/**
-	height: 450px;
-	width: 910px;
-	margin: 0px auto;
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/home.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position-y: -90px;
-	**/
 	
 	height: 450px;
 	width: 910px;
@@ -180,13 +170,6 @@ input[type="submit"]{
 }
 
 #operation-time{
-	/**
-	padding: 10px 0px 10px 0px;
-	margin: 0px auto;
-	width: 910px;
-	background-color: white;
-	border-bottom: 2px solid #E1E1E1;
-	**/
 	
 	padding: 0px 0px 10px 0px;
 	margin: 0px auto;
@@ -196,7 +179,8 @@ input[type="submit"]{
 }
 
 #op-day{
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/saturday.gif");
+	/** place full path from local computer to render racoon banner /home/img/saturday.gif **/
+	background-image: url("file:///C:/put the path here");
 	background-position-x: 0%;
 	background-position-y: 64%;
 	background-size: 100%;
@@ -217,13 +201,12 @@ input[type="submit"]{
 	font-family: 'Quicksand', sans-serif;
 }
 #toast-hours{
-		color: firebrick; 
-		font-size: 6vw; 
-		margin: 0px; 
-		padding: 0px; 
-		text-align: right;
+	color: firebrick; 
+	font-size: 6vw; 
+	margin: 0px; 
+	padding: 0px; 
+	text-align: right;
 }
-
 
 #box{
 	height: 362px;
@@ -240,7 +223,8 @@ input[type="submit"]{
 	height: 350px;
 	float: left;
 	box-shadow: -3px 3px 0px black;
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/lobster.png");
+	/** use local computer full path to render lobster image in left box /home/img/lobster.png **/
+	background-image: url("file:///C:/put path here");
 	background-size: 273px;
 	background-repeat: no-repeat;
 	background-position: top;
@@ -317,7 +301,8 @@ input[type="submit"]{
 	border-width: 3px 0px 3px 0px;
 	border-style: solid;
 	border-color: black;
-	background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+	/** use local computer full path to render footer banner image /home/img/header.jpg **/
+	background-image: url("file:///C:/put path here");
 }
 
 #footer-lip{
