@@ -6,45 +6,45 @@
 
 const items = [];
 var inc = 0;
-function addToCart(e){													//FUNCTION adds number to CART COUNTER
+function addToCart(e){										//FUNCTION adds number to CART COUNTER
 	
 	let el_add  = document.getElementById('counter');					//get id for counter element
 	
-	if(inc < 10){														//only allow 10 items to be added to the cart
-		inc += 1;														//increment GLOBAL inc variable first
-		el_add.innerHTML = '<p>'+inc+'</p>';							//update html for COUNTER number in CART
-		createCart(e.target.id);										//send event counting the ID of the specific clicked on item from menu
+	if(inc < 10){										//only allow 10 items to be added to the cart
+		inc += 1;									//increment GLOBAL inc variable first
+		el_add.innerHTML = '<p>'+inc+'</p>';						//update html for COUNTER number in CART
+		createCart(e.target.id);							//send event counting the ID of the specific clicked on item from menu
 	}
 }
 
-function removeFromCart(e){												//FUNCTION to decrement counter and update ID values in ITEMS array
+function removeFromCart(e){									//FUNCTION to decrement counter and update ID values in ITEMS array
 	
-	let index = parseInt(e.target.id);									//get ID of element to remove
-	items.splice(index-1, 1);											//splice element from array
-	inc--;																//decrement ID number
-	document.getElementById('counter').innerHTML = '<p>'+inc+'</p>';	//change counter value to new ID count
+	let index = parseInt(e.target.id);							//get ID of element to remove
+	items.splice(index-1, 1);								//splice element from array
+	inc--;											//decrement ID number
+	document.getElementById('counter').innerHTML = '<p>'+inc+'</p>';			//change counter value to new ID count
 	
-	let x = 1;															//new ID number for elements
-	for(let i = 0; i < inc; i++)										//loop through elements in array
-		items[i].firstChild.id = x++;									//change 1st child of elements in array to new ID number(1st = button id)
+	let x = 1;										//new ID number for elements
+	for(let i = 0; i < inc; i++)								//loop through elements in array
+		items[i].firstChild.id = x++;						//change 1st child of elements in array to new ID number(1st = button id)
 	
 }
 
-function closeDisplay(expandCart, expandCartCounter){		//CLOSE CART DROP DOWN function (expandCart = cart ID, expandCartCounter = counter ID)
-	let rmEl = document.getElementsByTagName('ul')[1]; 		//get the ul containing new elements on CART dropdown
+function closeDisplay(expandCart, expandCartCounter){				//CLOSE CART DROP DOWN function (expandCart = cart ID, expandCartCounter = counter ID)
+	let rmEl = document.getElementsByTagName('ul')[1]; 			//get the ul containing new elements on CART dropdown
 	
-	if(rmEl == null){										//Prevents undfined behavior
+	if(rmEl == null){									//Prevents undfined behavior
 		console.log('variable is null');
 		event.stopPropagation();
 		return;
 	}
 	
-	let conEl = rmEl.parentNode;							//get parent of ul node 'li'
+	let conEl = rmEl.parentNode;								//get parent of ul node 'li'
 	conEl.removeChild(rmEl);								//remove ul from cart display
 	
-	expandCart.style.animationName = 'cartAnimationClose';	//call animation to start @keyframes 
-	expandCart.style.animationDuration = '0.5s';			//set animation duration time
-	expandCart.style.width = '';							//undue all js styling for CART
+	expandCart.style.animationName = 'cartAnimationClose';					//call animation to start @keyframes 
+	expandCart.style.animationDuration = '0.5s';						//set animation duration time
+	expandCart.style.width = '';								//undue all js styling for CART
 	expandCart.style.borderRadius ='';
 	expandCart.style.width = '';
 	expandCart.style.position = '';
@@ -58,7 +58,7 @@ function closeDisplay(expandCart, expandCartCounter){		//CLOSE CART DROP DOWN fu
 	expandCart.style.paddingBottom = '';
 	expandCart.style.paddingLeft = '';
 	
-	expandCartCounter.style.backgroundColor = '';			//undue all js styling for COUNTER
+	expandCartCounter.style.backgroundColor = '';						//undue all js styling for COUNTER
 	expandCartCounter.style.border = '';
 	expandCartCounter.style.left = '';
 	expandCartCounter.style.float = '';
@@ -66,7 +66,7 @@ function closeDisplay(expandCart, expandCartCounter){		//CLOSE CART DROP DOWN fu
 	
 }
 
-function cartDisplayMobile(expandCart, expandCartCounter){//WE CAN MAKE THIS BETTER
+function cartDisplayMobile(expandCart, expandCartCounter){					//WE CAN MAKE THIS BETTER
 	console.log('mobile display');
 	expandCart.style.animationName = 'cartAnimation';
 	expandCart.style.animationDuration = '0.5s';
@@ -88,7 +88,7 @@ function cartDisplayMobile(expandCart, expandCartCounter){//WE CAN MAKE THIS BET
 	expandCartCounter.style.bottom = '22px';
 }
 
-function cartDisplayDesktop(expandCart, expandCartCounter){//COMBINE
+function cartDisplayDesktop(expandCart, expandCartCounter){				//COMBINE
 	console.log('desktop display');
 	expandCart.style.animationName = 'cartAnimation';
 	expandCart.style.animationDuration = '0.5s';
@@ -111,7 +111,7 @@ function cartDisplayDesktop(expandCart, expandCartCounter){//COMBINE
 }
 function cartDisplay(event){
 	
-	if(items.length == 0)												//IF there aren't any added item, don't display
+	if(items.length == 0)									//IF there aren't any added item, don't display
 		return;
 		
 	let device = screen.width;
@@ -126,14 +126,14 @@ function cartDisplay(event){
 		cartDisplayDesktop(expandCart, expandCartCounter);
 	
 	
-	var x = document.getElementsByTagName('li')[1];				//get CARRT List element
-	var u  = document.createElement('ul');						//Create unordered list
+	var x = document.getElementsByTagName('li')[1];						//get CARRT List element
+	var u  = document.createElement('ul');							//Create unordered list
 	u.setAttribute('id', 'expnd');								//set unordered element with ID = 'expnd' to stylize w/CSS
 	
-	for(var i = 0; i < items.length; i++){						//loop through items in array, and append to unordered list
-		u.appendChild(items[i]);								//append each element from array to unordered list
+	for(var i = 0; i < items.length; i++){							//loop through items in array, and append to unordered list
+		u.appendChild(items[i]);							//append each element from array to unordered list
 	}
-	x.appendChild(u);											//finally, append unordered list to CART list
+	x.appendChild(u);									//finally, append unordered list to CART list
 	
 	//DESKTOP/MOBILE: Counter DIV border goes out of wack
 	var rm, rmCon;
@@ -144,19 +144,16 @@ function cartDisplay(event){
 		removeFromCart(event);
 		console.log('removed: '+rm.innerHTML);
 		
-		if(items.length <= 0){									//Close Cart Display is there are no more items in the cart
+		if(items.length <= 0){								//Close Cart Display is there are no more items in the cart
 			closeDisplay(expandCart, expandCartCounter);
 		}
 	}
 	
 	window.onscroll = () => closeDisplay(expandCart,expandCartCounter);		//Close the Cart Display if SCROLLING is detected on the window (DESKTOP)
-	window.ontouchmove = () => closeDisplay(expandCart,expandCartCounter);	//Close the Cart Display if SCROLLING is detected on the window (MOBILE)
-	
-	//document.getElementsByTagName('body')[0].addEventListener('touchmove', function(){closeDisplay(expandCart,expandCartCounter);}, false);
-	
+	window.ontouchmove = () => closeDisplay(expandCart,expandCartCounter);		//Close the Cart Display if SCROLLING is detected on the window (MOBILE)
 }
 
-function createCart(itemID){
+function createCart(itemID){								//Create cart based on event id
 	var newEl = document.createElement('li');
 	newEl.setAttribute('class', 'select');
 	var newItem = '<input type=\"button\" id=\"' + inc + '\" name=\"'+itemID+'\">';
