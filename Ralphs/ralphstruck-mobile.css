@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+/** font-family: 'Covered By Your Grace', cursive; **/
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Permanent+Marker&display=swap');
+/** font-family: 'Permanent Marker', cursive; **/
+
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Shadows+Into+Light&display=swap');
+/** font-family: 'Shadows Into Light', cursive; **/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/**font-family: 'Quicksand', sans-serif;**/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+/**font-family: 'Fredericka the Great', cursive;**/
+
+html{ width: 100%; height: 100%;}
+
+body{ margin: auto;}
+
+@media only screen and (max-width: 600px) {
+	/**THIS IS THE SAME FOR ALL PAGES, LETS PUT IT IN IT's OWN PAGE**/
+	
+	/**HEADER**/
+	#header{
+		margin: 0 auto;
+		clear: both;
+		padding-top: 0px;
+		height: 70px;
+		width: 100%;
+	}
+	
+	#header-con{
+		height: 100%;
+		width: 100%;
+		padding: 0px;
+		margin: 0 auto;
+		border-width: 0px 0px 3px 0px;
+		border-style: solid;
+		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+		background-position-y: 50%;
+		background-position-x: 47%;
+		background-size: 1000px;
+		/*background: url(http://lp-sf.com/images/header_Bkgd.jpg) 0 0 no-repeat;*/
+		position: relative;
+	}
+	#logo{
+		float: left;
+		width: 20%;
+		height: 100%;
+		background-color: black;
+		margin-top: 0px;
+	}
+	
+	#logo img{
+		width: 100%;
+		height: 100%;
+	}
+	
+	#links{
+		float: left;
+		width: 20%;
+		height: 70px;
+		background-color: white;
+		margin: 0px auto;
+		position: relative;
+		left: 50%;
+	}
+	
+	ul{
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: relative;
+		margin: 0px auto;
+		padding: 0px;
+	}
+	
+	li{
+		list-style: none;
+		border: solid 2px black;
+		width: 100px;
+		height: 27px;
+		display: flex;
+		padding: 0px;
+		align-items: center;
+		margin-top: 4%;
+	}
+
+	#counter{
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		border-radius: 15px;
+		border: 2px solid black;
+		text-align: center;
+		position: relative;
+		left: 5px;
+	}
+	#counter p{
+		color: #DD215C;
+		margin: 0px;
+		position: relative;
+		bottom: 3px;
+		font-weight: bold;
+		font-family: 'Permanent Marker', cursive;
+	}
+	#expnd{
+		width: 100%;
+		
+	}
+	.select{
+		width: 150px;
+		height: 30px;
+		background-color: rgba(250,250,250, 0.5);
+		border-radius: 0px 5px 5px 5px;
+		position: unset;
+	}
+	input[type="button"]{
+		background-image: url('file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/shopping_cart/img/close-option.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 30px;
+		height: 100%;
+		background-position: center;
+	}
+	input[name="insc"]{
+		background-color: #DD215C;
+		border-color: #99123C;
+	}
+	input[name="carn"]{
+		background-color: #41A0E6;
+		border-color: #2482C5;
+	}
+	input[name="pesc"]{
+		background-color: #FC6E2E;
+		border-color: #B4400A;
+	}
+	/**
+	input[name="insc"]{
+		background-image: url('file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/shopping_cart/img/close-option.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 35px;
+		height: 100%;
+		background-position: center;
+		background-color: #DD215C;
+		border-color: #99123C;
+	}
+	**/
+
+	li a{
+		margin: 0px auto;
+		padding: 0px;
+		color: black;
+		font-family: 'Covered By Your Grace', cursive;
+		font-weight: bold;
+		font-size: 18px;
+		letter-spacing: 0.4vw;
+	}
+	
+	#cart{
+		width: 80px;
+		padding-left: 20px;
+		color: black;
+		font-family: 'Covered By Your Grace', cursive;
+		font-weight: bold;
+		font-size: 18px;
+		letter-spacing: 0.4vw;
+	}
+	
+	#cart p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	
+	@keyframes cartAnimation{
+		0%   { width: 0px; left: 0px;}
+		100% { width: 180px; left: -100px;}
+	}
+	@keyframes cartAnimationClose{
+		0% { width: 0px; background-color: rgba(255, 245, 238, 0.95);}
+		100%{ width: 80px; }
+	}
+	
+	#vegetarian, #carnivore, #pescivore{
+		width: 100%;
+		display: flex;
+		margin: 0px auto;
+	}
+	#vegetarian{
+		padding: 15px 0px 10px 0px;
+		border-bottom: 2px solid #E1E1E1;
+	}
+	#carnivore{
+		padding: 10px 0px 10px 0px;
+		border-bottom: 2px solid #E1E1E1;
+	}
+	#pescivore{
+		padding: 10px 0px 10px 0px;
+		border: none;
+	}
+	#veg-con, #carn-con, #pesc-con{
+		width: 70%;
+		height: 300px;
+		margin: 0px;
+		padding: 0px;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	#veg-con{
+		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/leaf-insect.png");
+		background-size: 79%;
+		background-repeat: no-repeat;
+		background-position-x: 85%;
+		background-position-y: 0%;
+	}
+	#carn-con{
+		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/frog.png");
+		background-size: 73%;
+		background-repeat: no-repeat;
+		background-position-x: 85%;
+		background-position-y: 0%;
+	}
+	#pesc-con{
+		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/Ralphs/images/hermit-crab.png");
+		background-size: 71%;
+		background-repeat: no-repeat;
+		background-position-x: 90%;
+		background-position-y: 5%;
+	}
+	
+	#veg-title, #carn-title, #pesc-title{
+		width: 75%;
+		height: 20%;
+		position: relative;
+		float: right;
+		top: 200px;
+		right: 0px;
+		font-family: 'Fredericka the Great', cursive;
+		text-align: end;
+		padding-right: 2%;
+		font-size: 5vw;
+	}
+	
+	
+	h3{width: 100%; font-size: 7vw;}
+	#veg-title{ color: coral; background-color: #DD215C;}
+	#carn-title{ color: lightcyan; background-color: #38BEFF;}
+	#pesc-title{ color: wheat; background-color: #FC6E2E;}
+	/**change -dis to -des**/
+	#veg-con-dis, #carn-con-dis, #pesc-con-dis{
+		width: 30%;
+		
+		color: white;
+		padding: 0px;
+		background-color: #DD215C;
+		font-family: 'Covered By Your Grace', cursive;
+		font-size: 5vw;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	#carn-con-dis{ background-color: #38BEFF;}
+	#carn-con-dis p{ padding: 0% 3% 0% 3%;}
+	#pesc-con-dis{ background-color: #FC6E2E;}
+	#button-con{
+		background-color: green;
+		width: 100%;
+	}
+	
+	.button {
+		width: 100%;
+		padding: 2%;
+		position: relative;
+		border: none;
+		font-size: 5vw;
+		font-family: 'Shadows Into Light', cursive;
+		color: #FFFFFF;
+		text-align: center;
+		transition-duration: 0.4s;
+		cursor: crosshair;
+	}
+
+	.button:after {
+		content: "";
+		background: azure;
+		display: block;
+		position: absolute;
+		padding-top: 43%;
+		padding-left: 100%;
+		margin-left: -1% !important;
+		margin-top: -40%;
+		opacity: 0;
+		transition: all 0.5s
+	}
+	/*****Lets do something with a on click listener JS*****/
+	.button:active:after {
+		padding: 0;
+		margin: 0;
+		opacity: 1;
+		transition: 0s;
+	}
+	#vegetarian .button{
+		background-color: #D47575;
+	}
+	#carnivore .button{
+		background-color: #41A0E6;
+	}
+	#pescivore .button{
+		background-color: coral;
+	}
+		
+	/**FOOTER**/
+	#footer{
+		margin: 0 auto;
+		clear: both;
+		height: 65px;
+		width: 100%;
+	}
+
+	#footer-con{
+		height: 90%;
+		width: 100%;
+		padding: 0px;
+		margin: 0px auto;
+		border-width: 3px 0px 3px 0px;
+		border-style: solid;
+		border-color: black;
+		background-image: url("file:///C:/Users/teran/Desktop/Orugasumu/ProjectAlpha/home/img/header.jpg");
+		background-size: 1000px;
+	}
+
+	#footer-lip{
+		height: 15%;
+		width: 100%;
+		padding: 0px;
+		margin: 0px auto;
+		border-width: 0px 0px 3px 0px;
+		border-style: solid;
+		border-color: black;
+		display: flex;
+		align-items: center;
+		background-color: white;
+	}
+}
